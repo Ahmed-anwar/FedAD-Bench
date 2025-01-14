@@ -1,0 +1,18 @@
+scalar:
+    accuracy:
+      _target_: sklearn.metrics.accuracy_score
+    auc_roc:
+      _target_: sklearn.metrics.roc_auc_score
+    auc_pr:
+      _target_: sklearn.metrics.average_precision_score
+
+    recall:
+      _target_: sklearn.metrics.recall_score
+      average: macro
+    precision:
+      _target_: sklearn.metrics.precision_score
+      average: macro
+    f1:
+      _target_: sklearn.metrics.f1_score
+      average: macro
+

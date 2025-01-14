@@ -1,0 +1,9 @@
+fc_1_out: 90
+fc_last_out: 32
+compression_unit: 20
+temperature: 0.07
+trans_type: mul
+n_layers: 4
+n_transforms: 11
+trans_fc_in: 200
+trans_fc_out: -1

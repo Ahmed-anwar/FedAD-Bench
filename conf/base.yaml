@@ -1,0 +1,55 @@
+experiment: test
+model_name: AE
+batch_size: 128
+n_epochs: 10
+results_path: results
+model_path: model_path_temp
+lr: 0.0001
+weight_decay: 0.0
+normal_size: 1.0
+val_ratio: 0.0
+hold_out: 0.0
+rho: 0.0
+test_mode: false
+seed: 42
+partition: uniform
+drop_last_batch: false
+fedprox_mu: -1
+
+# Optimizer (not called from here at the moment)
+optimizer: 
+  _target_: torch.optim.Adam
+
+# Simulation configs
+id: -2
+num_rounds: 50
+num_clients: 3
+num_clients_per_round_fit: ${num_clients}
+num_clients_per_round_eval: ${num_clients}
+num_cpus: 1
+num_gpus: 0
+
+# Evaluation config
+config_eval:
+  metrics: ${metrics}
+  threshold: dynamic
+
+# Local training config
+config_fit:
+  lr: ${lr}
+  local_epochs: ${n_epochs}
+  local_optimizer: ${optimizer}
+  metrics: ${metrics}
+  undersampling_p: 0.0
+  oversampling_p: 0.0
+  printing: False
+  fedprox_mu: ${fedprox_mu}
+  
+
+
+
+defaults:
+  - strategy: fedavg
+  - model: dae
+  - metrics: metrics
+  - dataset: arrhythmia

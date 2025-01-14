@@ -1,0 +1,7 @@
+shrink_thres: 0.0025  
+latent_dim: 1  
+mem_dim: 50
+n_layers: 4  
+alpha: 2e-4  
+compression_factor: 2  
+act_fn: relu  

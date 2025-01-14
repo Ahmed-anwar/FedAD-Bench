@@ -1,0 +1,2 @@
+dataset: Arrhythmia
+dataset_path: dataset/data/3_minified/arrhythmia_normalized.npz

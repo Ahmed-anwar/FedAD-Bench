@@ -1,0 +1,9 @@
+latent_dim: 1
+n_mixtures: 4
+lambda_1: 0.1
+lambda_2: 0.005
+reg_covar: 1e-12
+n_layers: 4
+compression_factor: 2
+ae_act_fn: relu
+gmm_act_fn: tanh

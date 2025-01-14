@@ -1,0 +1,4 @@
+---
+name: uniform
+# _target_: dataset.dataset_utils.partition_dataset_n_times
+# n: ${num_clients}

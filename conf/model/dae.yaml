@@ -1,0 +1,5 @@
+latent_dim: 3
+n_layers: 4
+compression_factor: 2
+act_fn: relu
+reg: 0.5

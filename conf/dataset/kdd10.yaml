@@ -1,0 +1,2 @@
+dataset: KDD10
+dataset_path: dataset/data/3_minified/KDD10percent_minified.npz

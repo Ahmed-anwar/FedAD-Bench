@@ -1,0 +1,9 @@
+---
+name: dirichlet
+alpha: 0.5
+seed: ${seed}
+# _target_: dataset.dataset_utils.partition_dataset_dirichlet
+# _partial_: true
+# num_clients: ${num_clients}
+# seed: ${seed}
+# alpha: 100
